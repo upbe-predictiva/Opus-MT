@@ -2,7 +2,7 @@
 # image to build Marian and the required Python modules, then copy the built
 # artifacts into a much smaller final image.
 
-FROM debian:stable as builder
+FROM debian:10 as builder
 
 WORKDIR /usr/src/app
 
@@ -13,7 +13,7 @@ RUN set -eux; \
 		ca-certificates git wget gnupg build-essential lsb-release g++ \
 		automake autogen libtool cmake-data cmake unzip \
 		libboost-all-dev libblas-dev libopenblas-dev libz-dev libssl-dev \
-		libprotobuf23 protobuf-compiler libprotobuf-dev \
+		libprotobuf17 protobuf-compiler libprotobuf-dev \
 		python3-dev python3-pip python3-setuptools python3-websocket python3-venv;
 
 # Install Intel libraries

@@ -71,7 +71,7 @@ or
 
 ```bash
 docker build . -t opus-mt
-docker run -p 8888:8888 opus-mt:latest
+docker run -p 8888:80 opus-mt:latest
 ```
 
 And launch your browser to localhost:8888
