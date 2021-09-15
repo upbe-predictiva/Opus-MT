@@ -5,27 +5,15 @@
             "sourcebpe": "./models/en-es/source.bpe",
             "host": "localhost",
             "port": "10001"
-        },
-        "fi": {
-            "configuration": "./models/en-fi/decoder.yml",
-            "sourcespm": "./models/en-fi/source.spm",
-            "targetspm": "./models/en-fi/target.spm",
-            "host": "localhost",
-            "port": "10002"
-        },
-        "ml": {
-            "configuration": "./models/en-ml/decoder.yml",
-            "sourcespm": "./models/en-ml/source.spm",
-            "targetspm": "./models/en-ml/target.spm",
+        }
+    },
+    "es": {
+        "ca": {
+            "configuration": "./models/es-ca/decoder.yml",
+            "sourcespm": "./models/es-ca/source.spm",
+            "targetspm": "./models/es-ca/target.spm",
             "host": "localhost",
             "port": "10003"
-        },
-        "mr": {
-            "configuration": "./models/en-mr/decoder.yml",
-            "sourcespm": "./models/en-mr/source.spm",
-            "targetspm": "./models/en-mr/target.spm",
-            "host": "localhost",
-            "port": "10004"
         }
     }
 }
